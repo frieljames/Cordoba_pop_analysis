@@ -274,7 +274,6 @@ PG_OleaPanel = readData("C:/file/location/filename", format = "VCF")
 ## Check the total number of SNPs
 PG_OleaPanel_sumdata = as.data.frame(get.sum.data(PG_OleaPanel))
 sum(PG_OleaPanel_sumdata$n.biallelic.sites)
-## It gives 20,000 SNPs lesss and I am not sure why. Nevertheless, the stats should be similar
 
 ## Add the populations
 K3group1list = K3groups[K3groups$Group == 1,1]
